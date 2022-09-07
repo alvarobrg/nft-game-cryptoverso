@@ -11,22 +11,15 @@ import { ethers } from "ethers";
 import Arena from './Components/Arena';
 import LoadingIndicator from "./Components/LoadingIndicator";
 
-// Constantes
 const TWITTER_HANDLE = "deficryptomoon";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
-  /*
-   * Só uma variável de estado que vamos usar para armazenar a carteira pública do usuário.
-   */
+
   const [currentAccount, setCurrentAccount] = useState(null);
   const [characterNFT, setCharacterNFT] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-
-  /*
-   * Já que esse método vai levar um tempo, lembre-se de declará-lo como async
-   */
   const checkIfWalletIsConnected = async () => {
     try {
       const { ethereum } = window;
@@ -38,14 +31,8 @@ const App = () => {
       } else {
         console.log("Nós temos o objeto ethereum", ethereum);
 
-        /*
-         * Checa se estamos autorizados a acessar a carteira do usuário.
-         */
         const accounts = await ethereum.request({ method: "eth_accounts" });
 
-        /*
-         * Usuário pode ter múltiplas contas autorizadas, pegamos a primeira se estiver ali!
-         */
         if (accounts.length !== 0) {
           const account = accounts[0];
           console.log("Carteira conectada::", account);
@@ -62,10 +49,7 @@ const App = () => {
 
   
   useEffect(() => {
-    /*
-     * A função que vamos chamar que interage com nosso contrato inteligente
-     */
-
+  
     const fetchNFTMetadata = async () => {
       console.log("Verificando pelo personagem NFT no endereço:", currentAccount);
     
@@ -90,9 +74,6 @@ const App = () => {
 
     };
 
-    /*
-     * Nós so queremos rodar isso se tivermos uma wallet conectada
-     */
     if (currentAccount) {
       console.log("Conta Atual:", currentAccount);
       fetchNFTMetadata();
@@ -100,11 +81,7 @@ const App = () => {
   }, [currentAccount]);  
 
   
-  // Métodos de renderização
   const renderContent = () => {
-    /*
-     * cenário #1
-     */
     if (isLoading) {
       return <LoadingIndicator />;
     }
@@ -124,9 +101,6 @@ const App = () => {
           </button>
         </div>
       );
-      /*
-       * cenário #2
-       */
     } else if (currentAccount && !characterNFT) {
       return <SelectCharacter setCharacterNFT={setCharacterNFT} />;
     } else if (currentAccount && characterNFT) {
@@ -134,9 +108,6 @@ const App = () => {
     }
   };
 
-  /*
-   * Implementa o seu método connectWallet aqui
-   */
   const connectWalletAction = async () => {
     try {
       const { ethereum } = window;
