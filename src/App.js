@@ -117,9 +117,6 @@ const App = () => {
         return;
       }
 
-      /*
-       * Método chique para pedir acesso para a conta.
-       */
       const accounts = await ethereum.request({
         method: "eth_requestAccounts",
       });
