@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = "0x951b62E321Ef2391914B35Af0e3b8FD7737652d2";
+export const CONTRACT_ADDRESS = "0xec023b7E3Aaa22328dB91a360de49df26a982a59";
 
 export const transformCharacterData = ({
   name,
