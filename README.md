@@ -1,4 +1,4 @@
-# WEB3 NFT Game Cryptoverso
+# WEB3 NFT Game Cryptoverso Linea
 
 ### **Bem-vind@ 👋**
 Para iniciar o projeto, clone esse repo e siga esses comandos:
