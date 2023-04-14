@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/nft-game-cryptoverso/static/css/main.afce3c34.chunk.css",
+    "main.js": "/nft-game-cryptoverso/static/js/main.c50a66b9.chunk.js",
+    "main.js.map": "/nft-game-cryptoverso/static/js/main.c50a66b9.chunk.js.map",
+    "runtime-main.js": "/nft-game-cryptoverso/static/js/runtime-main.d9bba0b4.js",
+    "runtime-main.js.map": "/nft-game-cryptoverso/static/js/runtime-main.d9bba0b4.js.map",
+    "static/js/2.fd6b43cc.chunk.js": "/nft-game-cryptoverso/static/js/2.fd6b43cc.chunk.js",
+    "static/js/2.fd6b43cc.chunk.js.map": "/nft-game-cryptoverso/static/js/2.fd6b43cc.chunk.js.map",
+    "index.html": "/nft-game-cryptoverso/index.html",
+    "static/css/main.afce3c34.chunk.css.map": "/nft-game-cryptoverso/static/css/main.afce3c34.chunk.css.map",
+    "static/js/2.fd6b43cc.chunk.js.LICENSE.txt": "/nft-game-cryptoverso/static/js/2.fd6b43cc.chunk.js.LICENSE.txt",
+    "static/media/twitter-logo.a8a75254.svg": "/nft-game-cryptoverso/static/media/twitter-logo.a8a75254.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9bba0b4.js",
+    "static/js/2.fd6b43cc.chunk.js",
+    "static/css/main.afce3c34.chunk.css",
+    "static/js/main.c50a66b9.chunk.js"
+  ]
+}
